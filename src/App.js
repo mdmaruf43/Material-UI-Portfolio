@@ -9,6 +9,8 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import About from './Component/About/About';
 import Portfolio from './Component/Portfolio/Portfolio';
 import NotFound from './Component/NotFound.js/NotFound';
+import Blog from './Component/Blog/Blog';
+import Contact from './Component/Contact/Contact';
 
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
           </Route>
           <Route path="/portfolio">
             <Portfolio />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="*">
               <NotFound />

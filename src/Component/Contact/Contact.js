@@ -6,12 +6,12 @@ import Drawer from '@material-ui/core/Drawer';
 import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -22,8 +22,8 @@ import { Avatar } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { secondaryListItems } from '../Dashboard/ListItems';
 import img from '../../Image/maruf.jpg'
-import imgMaruf from '../../Image/marufPhoto.jpg'
-import Content from './Content';
+import ContactInformation from './ContactInformation';
+import ImportantData from './ImportantData';
 
 function Copyright() {
     return (
@@ -128,10 +128,13 @@ function Copyright() {
     img: {
         width: 475,
         height: 630,
+    },
+    alignText: {
+        textAlign: 'center',
     }
 }));
 
-export default function About() {
+export default function Contact() {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
@@ -204,19 +207,17 @@ export default function About() {
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
-                <Grid container spacing={3}>
-                    <Grid item xs={12} md={5} lg={6}>
-                        <img className={classes.img} src={imgMaruf} alt="myImage"/>
+                    <Typography component="h2" variant="h3">
+                        <Box pb={5}>
+                            Contact Me
+                        </Box>
+                    </Typography>
+                    <Grid container spacing={3}>
+                    <Grid item xs={12} md={6} lg={6}>
+                        <ContactInformation />
                     </Grid>
-                    <Grid item xs={12} md={7} lg={6}>
-                        <Typography variant="h3" component="h2" gutterBottom>
-                            About Me
-                        </Typography>
-                        <Typography variant="body1" color="textSecondary" component="p" gutterBottom>
-                            My intellectual curiosity drives me to be a lifelong learner. As a curious tech learner, I am currently exploring Web technology having the experience of the Software Service industry. <br/> <br/>
-                            In my everyday life, I try to love reading a book, write different things, helping people, and coding as well. I also think about different sorts of people. That basically inspires me as a different aspect. 
-                        </Typography>
-                        <Content />
+                    <Grid item xs={12} md={6} lg={6}>
+                        <ImportantData />
                     </Grid>
                 </Grid>
                 </Container>

@@ -26,9 +26,9 @@ function Home() {
     return (
         <React.Fragment >
             <Typography variant="h5" component="h2" gutterBottom>
-                Hello, Welcome Maruf's World.
+                Welcome Maruf's World
             </Typography>
-            <Typography variant="body2" component="h2" gutterBottom>
+            <Typography variant="body2" color="textSecondary" component="p" gutterBottom>
                 I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
             </Typography>
             <MyButton color="blue">Download Resume</MyButton>
