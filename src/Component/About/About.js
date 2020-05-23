@@ -133,14 +133,13 @@ function Copyright() {
 
 export default function About() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
     const handleDrawerClose = () => {
         setOpen(false);
     };
-    const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
     return (
         <div className={classes.root}>
@@ -207,21 +206,17 @@ export default function About() {
                 <Container maxWidth="lg" className={classes.container}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={5} lg={6}>
-                        <div className={fixedHeightPaper}>
-                            <img className={classes.img} src={imgMaruf} alt="myImage"/>
-                        </div>
+                        <img className={classes.img} src={imgMaruf} alt="myImage"/>
                     </Grid>
                     <Grid item xs={12} md={7} lg={6}>
-                        <div className={fixedHeightPaper}>
-                            <Typography variant="h3" component="h2" gutterBottom>
-                                About Me
-                            </Typography>
-                            <Typography variant="body1" gutterBottom>
-                                My intellectual curiosity drives me to be a lifelong learner. As a curious tech learner, I am currently exploring Web technology having the experience of the Software Service industry. <br/> <br/>
-                                In my everyday life, I try to love reading a book, write different things, helping people, and coding as well. I also think about different sorts of people. That basically inspires me as a different aspect. 
-                            </Typography>
-                            <Content />
-                        </div>
+                        <Typography variant="h3" component="h2" gutterBottom>
+                            About Me
+                        </Typography>
+                        <Typography variant="body1" gutterBottom>
+                            My intellectual curiosity drives me to be a lifelong learner. As a curious tech learner, I am currently exploring Web technology having the experience of the Software Service industry. <br/> <br/>
+                            In my everyday life, I try to love reading a book, write different things, helping people, and coding as well. I also think about different sorts of people. That basically inspires me as a different aspect. 
+                        </Typography>
+                        <Content />
                     </Grid>
                 </Grid>
                 </Container>

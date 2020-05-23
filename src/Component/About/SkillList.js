@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import Typography from '@material-ui/core/Typography';
+import { Divider } from '@material-ui/core';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import WebIcon from '@material-ui/icons/Web';
@@ -23,7 +25,11 @@ export default function SkillList() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <React.Fragment className={classes.root}>
+            <Typography variant="h5" component="h2" gutterBottom>
+                Skills
+            </Typography>
+            <Divider />
             <List component="nav" aria-label="main mailbox folders">
                 <ListItem button>
                     <ListItemIcon>
@@ -62,6 +68,6 @@ export default function SkillList() {
                     <ListItemText primary="Technical Video Maker" />
                 </ListItem>
             </List>
-        </div>
+        </React.Fragment>
     );
 }

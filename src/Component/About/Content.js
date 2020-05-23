@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import CastForEducationIcon from '@material-ui/icons/CastForEducation';
 import SkillList from './SkillList'
-import { Divider } from '@material-ui/core';
 import ExperienceList from './ExperienceList';
 import EducationContent from './EducationContent';
 
@@ -81,11 +80,7 @@ export default function Content() {
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                    <Typography variant="h5" component="h2" gutterBottom>
-                        Skills
-                    </Typography>
-                    <Divider />
-                    <SkillList />
+                <SkillList />
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <ExperienceList />

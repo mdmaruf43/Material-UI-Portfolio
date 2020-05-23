@@ -1,4 +1,5 @@
 import React from 'react'
+import Typography from '@material-ui/core/Typography';
 
 import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -23,11 +24,15 @@ const MyButton = styled(({ color, ...other }) => <Button {...other} />)({
 
 function Home() {
     return (
-        <div >
-            <h1>Hello, Welcome Maruf's World.</h1>
-            <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+        <React.Fragment >
+            <Typography variant="h5" component="h2" gutterBottom>
+                Hello, Welcome Maruf's World.
+            </Typography>
+            <Typography variant="body2" component="h2" gutterBottom>
+                I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
+            </Typography>
             <MyButton color="blue">Download Resume</MyButton>
-        </div>
+        </React.Fragment>
     )
 }
 

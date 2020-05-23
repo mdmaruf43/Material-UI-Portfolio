@@ -26,7 +26,7 @@ import Home from '../Home/Home';
 
 function Copyright() {
     return (
-        <Typography variant="body3" color="textSecondary" align="center">
+        <Typography variant="body2" color="textSecondary" align="center">
         {'©'}
         <Link color="inherit" href="/"> </Link>{' '}
         {new Date().getFullYear()}
@@ -104,7 +104,7 @@ function Copyright() {
         overflow: 'auto',
     },
     container: {
-        paddingTop: theme.spacing(35),
+        paddingTop: theme.spacing(4),
         paddingBottom: theme.spacing(4),
     },
     paper: {
@@ -112,7 +112,6 @@ function Copyright() {
         display: 'flex',
         overflow: 'auto',
         textAlign: 'center',
-        alignItems: 'center',
         flexDirection: 'column',
     },
     fixedHeight: {
@@ -129,7 +128,7 @@ function Copyright() {
 
 export default function Dashboard() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -204,7 +203,17 @@ export default function Dashboard() {
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={12} lg={12}>
                         <div className={fixedHeightPaper}>
-                            <Home />
+                        <Box
+                            display="flex"
+                            alignItems="center"
+                            p={1}
+                            m={1}
+                            css={{ height: '100vh' }}
+                        >
+                            <Box p={1} >
+                                <Home />
+                            </Box>
+                        </Box>                      
                         </div>
                     </Grid>
                 </Grid>

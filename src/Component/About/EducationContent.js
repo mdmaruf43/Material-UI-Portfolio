@@ -4,7 +4,7 @@ import { Divider } from '@material-ui/core';
 
 function EducationContent() {
     return (
-        <div>
+        <>
             <Typography variant="h5" component="h2" gutterBottom>
                 Daffodil International University-DIU
             </Typography>
@@ -18,7 +18,7 @@ function EducationContent() {
                 2016 - 2020
             </Typography>
             <Divider />
-        </div>
+        </>
     )
 }
 
