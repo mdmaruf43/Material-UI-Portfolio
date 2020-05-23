@@ -1,7 +1,7 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography';
-
 import { styled } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
 
@@ -31,7 +31,9 @@ function Home() {
             <Typography variant="body2" color="textSecondary" component="p" gutterBottom>
                 I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
             </Typography>
-            <MyButton color="blue">Download Resume</MyButton>
+            <Link href="https://drive.google.com/file/d/1CU8K1jjC04FlJZvrHVTYFM6QFUNpeIhI/view?usp=sharing">
+                <MyButton color="blue">Download Resume</MyButton>
+            </Link>
         </React.Fragment>
     )
 }
