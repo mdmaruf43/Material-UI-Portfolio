@@ -20,9 +20,10 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { Avatar } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import { secondaryListItems } from './ListItems';
+import { secondaryListItems } from '../Dashboard/ListItems';
 import img from '../../Image/maruf.jpg'
-import Home from '../Home/Home';
+import imgMaruf from '../../Image/marufPhoto.jpg'
+import Content from './Content';
 
 function Copyright() {
     return (
@@ -102,17 +103,16 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
+        backgroundColor: '#e1f5fe'
     },
     container: {
-        paddingTop: theme.spacing(35),
+        paddingTop: theme.spacing(4),
         paddingBottom: theme.spacing(4),
     },
     paper: {
         padding: theme.spacing(2),
         display: 'flex',
         overflow: 'auto',
-        textAlign: 'center',
-        alignItems: 'center',
         flexDirection: 'column',
     },
     fixedHeight: {
@@ -124,10 +124,14 @@ function Copyright() {
     },
     textAlign: {
         textAlign: 'center',
+    },
+    img: {
+        width: 475,
+        height: 630,
     }
 }));
 
-export default function Dashboard() {
+export default function About() {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -202,9 +206,21 @@ export default function Dashboard() {
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
                 <Grid container spacing={3}>
-                    <Grid item xs={12} md={12} lg={12}>
+                    <Grid item xs={12} md={5} lg={6}>
                         <div className={fixedHeightPaper}>
-                            <Home />
+                            <img className={classes.img} src={imgMaruf} alt="myImage"/>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} md={7} lg={6}>
+                        <div className={fixedHeightPaper}>
+                            <Typography variant="h3" component="h2" gutterBottom>
+                                About Me
+                            </Typography>
+                            <Typography variant="body1" gutterBottom>
+                                My intellectual curiosity drives me to be a lifelong learner. As a curious tech learner, I am currently exploring Web technology having the experience of the Software Service industry. <br/> <br/>
+                                In my everyday life, I try to love reading a book, write different things, helping people, and coding as well. I also think about different sorts of people. That basically inspires me as a different aspect. 
+                            </Typography>
+                            <Content />
                         </div>
                     </Grid>
                 </Grid>
