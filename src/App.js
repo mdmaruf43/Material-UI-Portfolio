@@ -11,7 +11,6 @@ import Portfolio from './Component/Portfolio/Portfolio';
 import NotFound from './Component/NotFound.js/NotFound';
 import Blog from './Component/Blog/Blog';
 import Contact from './Component/Contact/Contact';
-import Animation from './Component/Animation/Amimation'
 
 function App() {
   return (
@@ -35,9 +34,6 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
-          </Route>
-          <Route path="/animation">
-            <Animation />
           </Route>
           <Route path="*">
               <NotFound />

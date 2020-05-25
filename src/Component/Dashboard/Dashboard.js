@@ -238,10 +238,11 @@ export default function Dashboard() {
                         <div className={fixedHeightPaper}>
                             <Box
                                 display="flex"
+                                textAlign='center'
                                 alignItems="center"
                                 p={1}
                                 m={1}
-                                css={{ height: '100' }}
+                                css={{ height: '80vh' }}
                             >
                                 <Box p={1} >
                                     <Home />

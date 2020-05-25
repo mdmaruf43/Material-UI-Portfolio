@@ -131,7 +131,7 @@ function Copyright() {
     },
     alignText: {
         textAlign: 'center',
-    }
+    },
 }));
 
 export default function Contact() {
@@ -208,7 +208,7 @@ export default function Contact() {
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
                     <Typography component="h2" variant="h3">
-                        <Box pb={5}>
+                        <Box pt={3}>
                             Contact Me
                         </Box>
                     </Typography>
