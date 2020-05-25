@@ -103,6 +103,7 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
+        flexDirection: 'coloum'
     },
     container: {
         paddingTop: theme.spacing(4),
@@ -110,6 +111,7 @@ function Copyright() {
     },
     paper: {
         padding: theme.spacing(2),
+        width: '100%',
         display: 'flex',
         overflow: 'auto',
         textAlign: 'center',
@@ -232,20 +234,20 @@ export default function Dashboard() {
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
                 <Grid container spacing={3}>
-                    <Grid item xs={12} md={12} lg={12}>
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
                         <div className={fixedHeightPaper}>
-                        <Box
-                            display="flex"
-                            alignItems="center"
-                            p={1}
-                            m={1}
-                            css={{ height: '100vh' }}
-                        >
-                            <Box p={1} >
-                                <Home />
-                            </Box>
-                        </Box> 
-                        <ParticlesBg type="custom" config={config} bg={true} />                     
+                            <Box
+                                display="flex"
+                                alignItems="center"
+                                p={1}
+                                m={1}
+                                css={{ height: '100' }}
+                            >
+                                <Box p={1} >
+                                    <Home />
+                                </Box>
+                            </Box> 
+                            <ParticlesBg type="custom" config={config} bg={true} />                     
                         </div>
                     </Grid>
                 </Grid>

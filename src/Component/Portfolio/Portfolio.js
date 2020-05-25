@@ -115,7 +115,7 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
-        backgroundColor: '#e1f5fe'
+        backgroundColor: '#f0f0f0'
     },
     container: {
         paddingTop: theme.spacing(4),

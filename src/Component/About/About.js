@@ -103,7 +103,7 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
-        backgroundColor: '#e1f5fe'
+        backgroundColor: '#f0f0f0'
     },
     container: {
         paddingTop: theme.spacing(4),
@@ -213,10 +213,10 @@ export default function About() {
                 <div className={classes.appBarSpacer} />
                 <Container maxWidth="lg" className={classes.container}>
                 <Grid container spacing={3}>
-                    <Grid item xs={12} md={5} lg={6}>
+                    <Grid item xs={12} sm={12} md={6} lg={6}>
                         <img className={classes.img} src={imgMaruf} alt="myImage"/>
                     </Grid>
-                    <Grid item xs={12} md={7} lg={6}>
+                    <Grid item xs={12} sm={12} md={6} lg={6}>
                         <Typography variant="h3" component="h2" gutterBottom>
                             About Me
                         </Typography>

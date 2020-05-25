@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
             display: 'block',
             padding: 8,
             boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.4)',
+            transition: 'boxShadow 0.3s',
+            willChange: 'transform',
+            border: '5px solid white',
         }
     },
     media: {
@@ -41,37 +44,35 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: red[500],
     },
 }));
-
 export default function ContentCard() {
     const classes = useStyles();
     return (
-    
-    <Card className={classes.root}>
-        <CardHeader
-            avatar={
-            <Avatar src={img} aria-label="recipe" className={classes.avatar}>
-                M
-            </Avatar>
-            }
-            action={
-            <IconButton aria-label="settings">
-                <MoreVertIcon />
-            </IconButton>
-            }
-            title="Hey! JavaScript Learner, It’s time to improve your Interview Experience"
-            subheader="May 17, 2020"
-        />
-        <CardMedia
-            className={classes.media}
-            image={interviewImg}
-        />
-        <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-                If you are curious about your nearest six-digit job. 
-                Then this article only for you. So, without farther do, Let’s begin.
-                <Link href="https://medium.com/@mdmaruf43/hey-javascript-learner-its-time-to-improve-your-interview-experience-a0d3ec15673">Read more</Link>
-            </Typography>
-        </CardContent>
-    </Card>
+        <Card className={classes.root}>
+            <CardHeader
+                avatar={
+                <Avatar src={img} aria-label="recipe" className={classes.avatar}>
+                    M
+                </Avatar>
+                }
+                action={
+                <IconButton aria-label="settings">
+                    <MoreVertIcon />
+                </IconButton>
+                }
+                title="Hey! JavaScript Learner, It’s time to improve your Interview Experience"
+                subheader="May 17, 2020"
+            />
+            <CardMedia
+                className={classes.media}
+                image={interviewImg}
+            />
+            <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    If you are curious about your nearest six-digit job. 
+                    Then this article only for you. So, without farther do, Let’s begin.
+                    <Link href="https://medium.com/@mdmaruf43/hey-javascript-learner-its-time-to-improve-your-interview-experience-a0d3ec15673">Read more</Link>
+                </Typography>
+            </CardContent>
+        </Card>
     );
 }

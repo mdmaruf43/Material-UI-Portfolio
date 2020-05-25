@@ -4,6 +4,9 @@ import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
+import {useSpring, animated } from 'react-spring'
+import Typist from 'react-typist';
+import img from '../../Image/maruf.jpg';
 
 const MyButton = styled(({ color, ...other }) => <Button {...other} />)({
     background: (props) =>
@@ -28,17 +31,30 @@ const useStyles = makeStyles((theme) => ({
             textDecoration: 'none',
         }
     },
+    circle: {
+        borderRadius: '50%',
+        width: '200px',
+        height: '200px',
+        border: '1px solid black'
+    }
 }));
 
 function Home() {
     const classes = useStyles();
+    const props = useSpring({
+        to: [{opacity: 1, color: '#ffaaee'}, {opacity: 1, color: 'rgb(14,26,19)'}],
+        from: {opacity: .5, color: 'red'}
+    })
     return (
         <React.Fragment >
-            <Typography className={classes.textShadow} variant="h2" component="h2" gutterBottom>
-                Welcome Maruf's World
+            <Typography variant="h4" component="h2" gutterBottom>
+            <img className={classes.circle} src={img} alt="myImage" />
+                <animated.h3 style={props}>Welcome Maruf's World</animated.h3>
             </Typography>
             <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
-                I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
+                <Typist>
+                    JavaScript Developer | Content Writer | Stay Humble | BG: B+(ve)
+                </Typist> 
             </Typography>
             <Link className={classes.textDecoration} href="../../File/MarufResume.pdf" target="_blank" download>
                 <MyButton color="blue">Download Resume</MyButton>

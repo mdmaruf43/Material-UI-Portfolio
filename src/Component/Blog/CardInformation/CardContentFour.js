@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
             display: 'block',
             padding: 8,
             boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.4)',
+            transition: 'boxShadow 0.3s',
+            willChange: 'transform',
+            border: '5px solid white',
         }
     },
     media: {

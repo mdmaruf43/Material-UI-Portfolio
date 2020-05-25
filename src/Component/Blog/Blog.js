@@ -108,7 +108,7 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
-        backgroundColor: '#e1f5fe'
+        backgroundColor: '#f0f0f0'
     },
     container: {
         paddingTop: theme.spacing(4),
@@ -223,13 +223,13 @@ export default function Blog() {
                         </Box>
                     </Typography>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <ContentCard />
                         </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <CardContentTwo />
                         </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <CardContentThree />
                         </Grid>
                     </Grid>
@@ -237,13 +237,13 @@ export default function Blog() {
 
                     </Box>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <CardContentFour />
                         </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <CardContentFive />
                         </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <CardContentSix />
                         </Grid>
                     </Grid>
