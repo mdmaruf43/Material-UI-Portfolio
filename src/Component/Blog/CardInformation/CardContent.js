@@ -16,6 +16,12 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
+        '&:hover': {
+            vector: [0, 10, 30],
+            display: 'block',
+            padding: 8,
+            boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.4)',
+        }
     },
     media: {
         height: 0,
@@ -38,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ContentCard() {
     const classes = useStyles();
-return (
+    return (
+    
     <Card className={classes.root}>
         <CardHeader
             avatar={

@@ -128,6 +128,14 @@ function Copyright() {
     img: {
         width: 475,
         height: 630,
+        '&:hover': {
+            display: 'block',
+            padding: 10,
+            background: 'linear-gradient(to right, #009fff, #ec2f4b)',
+            borderRadius: '5px',
+            boxShadow: '0px 70px 100px -10px rgba(0, 0, 0, 0.4)',
+            transform: 'translate3d(0px,0,0) scale(1) rotateX(0deg)',
+        }
     }
 }));
 
@@ -159,22 +167,22 @@ export default function About() {
                         Maruf's World
                     </Typography>
                     <IconButton color="inherit">
-                        <Link href="https://github.com/mdmaruf43">
+                        <Link href="https://github.com/mdmaruf43" target="_blank">
                             <GitHubIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.linkedin.com/in/mdmaruf43/">
+                        <Link href="https://www.linkedin.com/in/mdmaruf43/" target="_blank">
                             <LinkedInIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://twitter.com/mdmaruf43">
+                        <Link href="https://twitter.com/mdmaruf43" target="_blank">
                             <TwitterIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.facebook.com/mdmaruf43">
+                        <Link href="https://www.facebook.com/mdmaruf43" target="_blank">
                             <FacebookIcon />
                         </Link>
                     </IconButton>

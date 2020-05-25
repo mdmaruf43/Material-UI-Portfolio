@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { styled } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
-
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
 
 const MyButton = styled(({ color, ...other }) => <Button {...other} />)({
     background: (props) =>
@@ -22,16 +22,25 @@ const MyButton = styled(({ color, ...other }) => <Button {...other} />)({
         margin: 8,
 });
 
+const useStyles = makeStyles((theme) => ({
+    textDecoration: {
+        '&:hover': {
+            textDecoration: 'none',
+        }
+    },
+}));
+
 function Home() {
+    const classes = useStyles();
     return (
         <React.Fragment >
-            <Typography variant="h5" component="h2" gutterBottom>
+            <Typography className={classes.textShadow} variant="h2" component="h2" gutterBottom>
                 Welcome Maruf's World
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p" gutterBottom>
+            <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
                 I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.
             </Typography>
-            <Link href="https://drive.google.com/file/d/1CU8K1jjC04FlJZvrHVTYFM6QFUNpeIhI/view?usp=sharing">
+            <Link className={classes.textDecoration} href="../../File/MarufResume.pdf" target="_blank" download>
                 <MyButton color="blue">Download Resume</MyButton>
             </Link>
         </React.Fragment>

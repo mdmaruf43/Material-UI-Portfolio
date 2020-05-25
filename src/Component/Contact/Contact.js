@@ -162,22 +162,22 @@ export default function Contact() {
                         Maruf's World
                     </Typography>
                     <IconButton color="inherit">
-                        <Link href="https://github.com/mdmaruf43">
+                        <Link href="https://github.com/mdmaruf43" target="_blank">
                             <GitHubIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.linkedin.com/in/mdmaruf43/">
+                        <Link href="https://www.linkedin.com/in/mdmaruf43/" target="_blank">
                             <LinkedInIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://twitter.com/mdmaruf43">
+                        <Link href="https://twitter.com/mdmaruf43" target="_blank">
                             <TwitterIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.facebook.com/mdmaruf43">
+                        <Link href="https://www.facebook.com/mdmaruf43" target="_blank">
                             <FacebookIcon />
                         </Link>
                     </IconButton>

@@ -143,7 +143,22 @@ function Copyright() {
     },
     alignText: {
         textAlign: 'center',
+    },
+    textDecoration: {
+        '&:hover': {
+            textDecoration: 'none',
+        }
+    },
+    cardShadow: {
+        '&:hover': {
+            vector: [0, 10, 30],
+            display: 'block',
+            padding: 20,
+            transform: 'translate3d(0px,0,0) scale(1) rotateX(0deg)',
+            boxShadow: '0px 70px 100px -10px rgba(0, 0, 0, 0.4)',
+        }
     }
+
 }));
 
 export default function Portfolio() {
@@ -169,7 +184,7 @@ export default function Portfolio() {
             left: '50%',
             color: '#fff',
             transform: 'translateX(-50%)',
-        }
+        },
     }
 
     return (
@@ -190,22 +205,22 @@ export default function Portfolio() {
                         Maruf's World
                     </Typography>
                     <IconButton color="inherit">
-                        <Link href="https://github.com/mdmaruf43">
+                        <Link href="https://github.com/mdmaruf43" target="_blank">
                             <GitHubIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.linkedin.com/in/mdmaruf43/">
+                        <Link href="https://www.linkedin.com/in/mdmaruf43/" target="_blank">
                             <LinkedInIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://twitter.com/mdmaruf43">
+                        <Link href="https://twitter.com/mdmaruf43" target="_blank">
                             <TwitterIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">
-                        <Link href="https://www.facebook.com/mdmaruf43">
+                        <Link href="https://www.facebook.com/mdmaruf43" target="_blank">
                             <FacebookIcon />
                         </Link>
                     </IconButton>
@@ -242,7 +257,7 @@ export default function Portfolio() {
                     </Typography>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={redOnionImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -260,10 +275,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://github.com/mdmaruf43/doctors-portal">
+                                        <Link href="https://github.com/mdmaruf43/doctors-portal" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/doctors-portal">
+                                        <Link href="https://github.com/mdmaruf43/doctors-portal" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -271,7 +286,7 @@ export default function Portfolio() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={emaJonSimpleImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -289,10 +304,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://red-onion-simple-restaurant.web.app/">
+                                        <Link href="https://red-onion-simple-restaurant.web.app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/firebase-hosting-with-red-onion-react-assignment">
+                                        <Link href="https://github.com/mdmaruf43/firebase-hosting-with-red-onion-react-assignment" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -300,7 +315,7 @@ export default function Portfolio() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={doctorPortalImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -318,10 +333,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://ema-john-simple-react.firebaseapp.com/">
+                                        <Link href="https://ema-john-simple-react.firebaseapp.com/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/ema-john-simple">
+                                        <Link href="https://github.com/mdmaruf43/ema-john-simple" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -334,7 +349,7 @@ export default function Portfolio() {
                     </Box>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={friendMediaImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -352,10 +367,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://friends-media.netlify.app/">
+                                        <Link href="https://friends-media.netlify.app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/react-assignment">
+                                        <Link href="https://github.com/mdmaruf43/react-assignment" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -363,7 +378,7 @@ export default function Portfolio() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={libraryImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -381,10 +396,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://mdmaruf43.github.io/library-app/">
+                                        <Link href="https://mdmaruf43.github.io/library-app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/library-app">
+                                        <Link href="https://github.com/mdmaruf43/library-app" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -392,7 +407,7 @@ export default function Portfolio() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} md={4} lg={4}>
-                            <Card style={styles.card}>
+                            <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
                                     <CardMedia image={hotGagetImg} style={styles.media}/>
                                     <div style={styles.overlay}>
@@ -410,10 +425,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://mdmaruf43.github.io/hot-gadgets-e-commerce/">
+                                        <Link href="https://mdmaruf43.github.io/hot-gadgets-e-commerce/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/hot-gadgets-e-commerce">
+                                        <Link href="https://github.com/mdmaruf43/hot-gadgets-e-commerce" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -423,7 +438,7 @@ export default function Portfolio() {
                     </Grid>
                     <Typography className={classes.alignText}>
                         <Box pt={3}>
-                            <Link href="https://github.com/mdmaruf43">
+                            <Link className={classes.textDecoration} href="https://github.com/mdmaruf43" target="_blank">
                                 <SimpleButton />
                             </Link>
                         </Box>
