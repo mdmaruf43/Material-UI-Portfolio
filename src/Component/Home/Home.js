@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {useSpring, animated } from 'react-spring'
 import Typist from 'react-typist';
 import img from '../../Image/maruf.jpg';
+import pdf from '../../File/MarufResume.pdf'
 
 const MyButton = styled(({ color, ...other }) => <Button {...other} />)({
     background: (props) =>
@@ -47,18 +48,20 @@ function Home() {
     })
     return (
         <React.Fragment >
-            <Typography variant="h4" component="h2" gutterBottom>
-            <img className={classes.circle} src={img} alt="myImage" />
-                <animated.h3 style={props}>Welcome Maruf's World</animated.h3>
-            </Typography>
-            <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
-                <Typist>
-                    JavaScript Developer | Content Writer | Stay Humble | BG: B+(ve)
-                </Typist> 
-            </Typography>
-            <Link className={classes.textDecoration} href="../../File/MarufResume.pdf" target="_blank" download>
-                <MyButton color="blue">Download Resume</MyButton>
-            </Link>
+            <div>
+                <Typography variant="h4" component="h2" gutterBottom>
+                <img className={classes.circle} src={img} alt="myImage" />
+                    <animated.h3 style={props}>Welcome Maruf's World</animated.h3>
+                </Typography>
+                <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
+                    <Typist>
+                        JavaScript Developer | Content Writer | Stay Humble | BG: B+(ve)
+                    </Typist> 
+                </Typography>
+                <Link className={classes.textDecoration} href={pdf} target="_blank" download="MarufResume.pdf">
+                    <MyButton color="blue">Download Resume</MyButton>
+                </Link>
+            </div>
         </React.Fragment>
     )
 }

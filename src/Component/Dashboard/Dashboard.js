@@ -103,7 +103,6 @@ function Copyright() {
         flexGrow: 1,
         height: '100vh',
         overflow: 'auto',
-        flexDirection: 'coloum'
     },
     container: {
         paddingTop: theme.spacing(4),
@@ -111,14 +110,14 @@ function Copyright() {
     },
     paper: {
         padding: theme.spacing(2),
-        width: '100%',
         display: 'flex',
         overflow: 'auto',
-        textAlign: 'center',
         flexDirection: 'column',
     },
     fixedHeight: {
         height: '100vh',
+        textAlign: 'center',
+        alignItems: 'center'
     },
     large: {
         width: 50,
@@ -238,11 +237,10 @@ export default function Dashboard() {
                         <div className={fixedHeightPaper}>
                             <Box
                                 display="flex"
-                                textAlign='center'
                                 alignItems="center"
                                 p={1}
                                 m={1}
-                                css={{ height: '80vh' }}
+                                css={{ height: '73vh' }}
                             >
                                 <Box p={1} >
                                     <Home />
