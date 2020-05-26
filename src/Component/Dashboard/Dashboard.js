@@ -139,14 +139,14 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
     let config = {
-        num: [4, 7],
+        num: [2, 5],
         rps: 0.1,
         radius: [5, 40],
         life: [1.5, 3],
         v: [2, 3],
         tha: [-40, 40],
-        alpha: [0.6, 0],
-        scale: [.1, 0.4],
+        alpha: [0.7, 0.3],
+        scale: [.1, 0.2],
         position: "all",
         color: ["random", "#ff0000"],
         cross: "dead",
