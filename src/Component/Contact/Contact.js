@@ -15,6 +15,7 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -174,6 +175,11 @@ export default function Contact() {
                     <IconButton color="inherit">
                         <Link href="https://twitter.com/mdmaruf43" target="_blank">
                             <TwitterIcon />
+                        </Link>
+                    </IconButton>
+                    <IconButton color="inherit">
+                        <Link href="https://www.youtube.com/channel/UCr3rzkFsTtgKg4fHSlo-hkg" target="_blank">
+                            <YouTubeIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">

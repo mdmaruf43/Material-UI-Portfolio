@@ -6,18 +6,6 @@ import Link from '@material-ui/core/Link';
 function ExperienceList() {
     return (
         <React.Fragment>
-            <Typography variant="h5" component="h2" gutterBottom>
-                Managing Editor
-            </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
-                <Link href="https://www.projuktiravijatri.com/author/mdmaruf/">
-                    Projuktir Avijatri - প্রযুক্তির অভিযাত্রি - Part-time
-                </Link>
-            </Typography>
-            <Typography variant="body2" component="p" gutterBottom>
-                Dec 2017 - Present - 2 Yers 6 mos
-            </Typography>
-            <Divider />
                 <Typography variant="h5" component="h2" gutterBottom>
                     Chief Operating Officer
                 </Typography>
@@ -40,6 +28,18 @@ function ExperienceList() {
                 </Typography>
                 <Typography variant="body2" component="p" gutterBottom>
                     May 2018 - May 2019 - 1 yr 1 mo
+                </Typography>
+            <Divider />
+                <Typography variant="h5" component="h2" gutterBottom>
+                    Managing Editor
+                </Typography>
+                <Typography variant="body1" component="p" gutterBottom>
+                    <Link href="https://www.projuktiravijatri.com/author/mdmaruf/">
+                        Projuktir Avijatri - প্রযুক্তির অভিযাত্রি - Full-time
+                    </Link>
+                </Typography>
+                <Typography variant="body2" component="p" gutterBottom>
+                    July 2017 - Sep 2018 - 1 yr 3 mo
                 </Typography>
             <Divider />
                 <Typography variant="h5" component="h2" gutterBottom>

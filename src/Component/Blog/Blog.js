@@ -17,6 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { Avatar } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -184,6 +185,11 @@ export default function Blog() {
                     <IconButton color="inherit">
                         <Link href="https://twitter.com/mdmaruf43" target="_blank">
                             <TwitterIcon />
+                        </Link>
+                    </IconButton>
+                    <IconButton color="inherit">
+                        <Link href="https://www.youtube.com/channel/UCr3rzkFsTtgKg4fHSlo-hkg" target="_blank">
+                            <YouTubeIcon />
                         </Link>
                     </IconButton>
                     <IconButton color="inherit">

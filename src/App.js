@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +14,7 @@ import Contact from './Component/Contact/Contact';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Switch>
           <Route exact path="/">
             <Dashboard />
