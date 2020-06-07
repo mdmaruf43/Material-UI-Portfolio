@@ -55,7 +55,7 @@ function Home() {
                 </Typography>
                 <Typography variant="h6" color="textSecondary" component="p" gutterBottom>
                     <Typist>
-                        JavaScript Developer | Content Writer | Stay Humble | BG: B+(ve)
+                        JavaScript Developer | Content Writer | Book Lover | BG: B+(ve)
                     </Typist> 
                 </Typography>
                 <Link className={classes.textDecoration} href={pdf} target="_blank" download="MarufResume.pdf">

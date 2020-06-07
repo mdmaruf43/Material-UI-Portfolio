@@ -34,8 +34,8 @@ import redOnionImg from '../../Image/redOnion.PNG'
 import emaJonSimpleImg from '../../Image/emaSimple.PNG'
 import doctorPortalImg from '../../Image/doctorPortal.PNG'
 import friendMediaImg from '../../Image/FriendsMedia.PNG'
-import libraryImg from '../../Image/library.PNG'
-import hotGagetImg from '../../Image/hotGaget.PNG'
+import aircnc from '../../Image/aircnc.PNG'
+import powerxgym from '../../Image/powerXgym.PNG'
 import SimpleButton from './Button'
 
 function Copyright() {
@@ -154,9 +154,8 @@ function Copyright() {
         '&:hover': {
             vector: [0, 10, 30],
             display: 'block',
-            padding: 20,
             transform: 'translate3d(0px,0,0) scale(1) rotateX(0deg)',
-            boxShadow: '0px 70px 100px -10px rgba(0, 0, 0, 0.4)',
+            boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
         }
     }
 
@@ -265,7 +264,7 @@ export default function Portfolio() {
                         <Grid item xs={12} md={4} lg={4}>
                             <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
-                                    <CardMedia image={redOnionImg} style={styles.media}/>
+                                    <CardMedia image={aircnc} style={styles.media}/>
                                     <div style={styles.overlay}>
                                         <Typography component="h1" variant="h5">
                                             
@@ -273,28 +272,28 @@ export default function Portfolio() {
                                     </div>
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            Red Onion
+                                            Air CNC
                                         </Typography>
                                         <Divider />
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            <strong>Key Technology: </strong> React, React Router, React Bootstrap, Firebase Authentication, Stripe Payment, Express & MongoDB
+                                            <strong>Key Technology: </strong> React, React Router, React Bootstrap, SCSS, Firebase Hosting, React Maps, PayPal Payment, Express & MongoDB
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://github.com/mdmaruf43/doctors-portal" target="_blank">
+                                        <Link href="https://air-cnc-ed30c.web.app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/doctors-portal" target="_blank">
+                                        <Link href="https://github.com/mdmaruf43/air-cnc" target="_blank">
                                             <GithubButton />
                                         </Link>
-                                    </CardActions>
+                                    </CardActions>  
                                 </CardActionArea>
                             </Card>
                         </Grid>
                         <Grid item xs={12} md={4} lg={4}>
                             <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
-                                    <CardMedia image={emaJonSimpleImg} style={styles.media}/>
+                                    <CardMedia image={powerxgym} style={styles.media}/>
                                     <div style={styles.overlay}>
                                         <Typography component="h1" variant="h5">
                                             
@@ -302,18 +301,18 @@ export default function Portfolio() {
                                     </div>
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
-                                            Ema John Simple
+                                            Power X Gym
                                         </Typography>
                                         <Divider />
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            <strong>Key Technology: </strong> React, React Router, React Bootstrap, Firebase Authentication, Stripe Payment, Express & MongoDB
+                                            <strong>Key Technology: </strong> React, React Router, React Bootstrap, Firebase Hosting, Google Analytics, SCSS, PayPal Payment, Express & MongoDB
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://red-onion-simple-restaurant.web.app/" target="_blank">
+                                        <Link href="https://power-x-gym-af156.web.app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/firebase-hosting-with-red-onion-react-assignment" target="_blank">
+                                        <Link href="https://github.com/mdmaruf43/Power-X-Gym" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -339,10 +338,10 @@ export default function Portfolio() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://ema-john-simple-react.firebaseapp.com/" target="_blank">
+                                        <Link href="https://doctors-portal-733e5.web.app/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
-                                        <Link href="https://github.com/mdmaruf43/ema-john-simple" target="_blank">
+                                        <Link href="https://github.com/mdmaruf43/doctors-portal" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>
@@ -354,6 +353,64 @@ export default function Portfolio() {
 
                     </Box>
                     <Grid container spacing={3}>
+                        <Grid item xs={12} md={4} lg={4}>
+                            <Card className={classes.cardShadow} style={styles.card}>
+                                <CardActionArea>
+                                    <CardMedia image={redOnionImg} style={styles.media}/>
+                                    <div style={styles.overlay}>
+                                        <Typography component="h1" variant="h5">
+                                            
+                                        </Typography>
+                                    </div>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            Red Onion
+                                        </Typography>
+                                        <Divider />
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            <strong>Key Technology: </strong> React, React Router, Firebase Authentication, Firebase Hosting, Stripe Payment, Express & MongoDB
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Link href="https://red-onion-simple-restaurant.web.app/" target="_blank">
+                                            <VisibilityButton />
+                                        </Link>
+                                        <Link href="https://github.com/mdmaruf43/red-onion" target="_blank">
+                                            <GithubButton />
+                                        </Link>
+                                    </CardActions>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} md={4} lg={4}>
+                            <Card className={classes.cardShadow} style={styles.card}>
+                                <CardActionArea>
+                                    <CardMedia image={emaJonSimpleImg} style={styles.media}/>
+                                    <div style={styles.overlay}>
+                                        <Typography component="h1" variant="h5">
+                                            
+                                        </Typography>
+                                    </div>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            Ema John Simple
+                                        </Typography>
+                                        <Divider />
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            <strong>Key Technology: </strong> React, React Router, Firebase Authentication, Firebase Hosting, Stripe Payment, Express & MongoDB
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Link href="hhttps://ema-john-simple-react.firebaseapp.com/" target="_blank">
+                                            <VisibilityButton />
+                                        </Link>
+                                        <Link href="https://github.com/mdmaruf43/ema-john-simple" target="_blank">
+                                            <GithubButton />
+                                        </Link>
+                                    </CardActions>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                         <Grid item xs={12} md={4} lg={4}>
                             <Card className={classes.cardShadow} style={styles.card}>
                                 <CardActionArea>
@@ -369,72 +426,14 @@ export default function Portfolio() {
                                         </Typography>
                                         <Divider />
                                         <Typography variant="body2" color="textSecondary" component="p">
-                                            <strong>Key Technology: </strong> React, React Router
+                                            <strong>Key Technology: </strong> React, React Router, React Hooks, 
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Link href="https://friends-media.netlify.app/" target="_blank">
+                                        <Link href="https://friends-media.netlify.com/" target="_blank">
                                             <VisibilityButton />
                                         </Link>
                                         <Link href="https://github.com/mdmaruf43/react-assignment" target="_blank">
-                                            <GithubButton />
-                                        </Link>
-                                    </CardActions>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
-                            <Card className={classes.cardShadow} style={styles.card}>
-                                <CardActionArea>
-                                    <CardMedia image={libraryImg} style={styles.media}/>
-                                    <div style={styles.overlay}>
-                                        <Typography component="h1" variant="h5">
-                                            
-                                        </Typography>
-                                    </div>
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            Library
-                                        </Typography>
-                                        <Divider />
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            <strong>Key Technology: </strong> JavaScript, Bootstrap, HTML & CSS
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Link href="https://mdmaruf43.github.io/library-app/" target="_blank">
-                                            <VisibilityButton />
-                                        </Link>
-                                        <Link href="https://github.com/mdmaruf43/library-app" target="_blank">
-                                            <GithubButton />
-                                        </Link>
-                                    </CardActions>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} md={4} lg={4}>
-                            <Card className={classes.cardShadow} style={styles.card}>
-                                <CardActionArea>
-                                    <CardMedia image={hotGagetImg} style={styles.media}/>
-                                    <div style={styles.overlay}>
-                                        <Typography component="h1" variant="h5">
-                                            
-                                        </Typography>
-                                    </div>
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            Hot Gaget
-                                        </Typography>
-                                        <Divider />
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            <strong>Key Technology: </strong> Bootstrap, HTML & CSS
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Link href="https://mdmaruf43.github.io/hot-gadgets-e-commerce/" target="_blank">
-                                            <VisibilityButton />
-                                        </Link>
-                                        <Link href="https://github.com/mdmaruf43/hot-gadgets-e-commerce" target="_blank">
                                             <GithubButton />
                                         </Link>
                                     </CardActions>

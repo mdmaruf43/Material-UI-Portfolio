@@ -19,11 +19,9 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             vector: [0, 10, 30],
             display: 'block',
-            padding: 8,
-            boxShadow: '0px 10px 20px 0px rgba(0,0,0,0.4)',
+            boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
             transition: 'boxShadow 0.3s',
             willChange: 'transform',
-            border: '5px solid white',
         }
     },
     media: {
