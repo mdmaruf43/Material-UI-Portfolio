@@ -8,6 +8,12 @@ function Amimation() {
             <Typist>
                 Animate this text.
             </Typist>  
+            <Typist>
+                Animate this text.
+            </Typist>  
+            <Typist>
+                Animate this text.
+            </Typist>  
         </div>
     )
 }
